@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const User = require("../models/User");
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcrypt");
@@ -6,7 +7,7 @@ var jwt = require("jsonwebtoken");
 const fetchuser = require("../middleware/fetchuser");
 
 //JWT_SECRET encode it in .env file
-const JWT_SECRET = 'shhhhh';
+const JWT_SECRET = process.env.JWT_KEY;
 
 const router = express.Router();
 
