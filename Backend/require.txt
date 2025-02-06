@@ -1,0 +1,9 @@
+mongoose
+cors
+dotenv
+nodemon
+express
+bcrypt
+jsonwebtoken
+express-validator
+google/gen-ai
