@@ -34,7 +34,5 @@ app.post("/ask-ai", async (req, res) => {
 
 app.listen(port, () => {
   
-
-
   console.log(`backend listening on port http://localhost:${port}`);
 });
