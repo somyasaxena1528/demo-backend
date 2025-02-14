@@ -6,4 +6,22 @@ express
 bcrypt
 jsonwebtoken
 express-validator
-google/gen-ai
+@google/generative-ai
+try {
+    // Fetch data from MongoDB
+    const appliances = await Appliance.find({});
+
+    // Prepare data for Google Charts
+    const chartData = appliances.map(appliance => ({
+      applianceName: appliance.applianceName,
+      energyConsumption: appliance.energyConsumption
+    }));
+
+    // Send the data to the frontend
+    res.json(chartData);
+    console.log("Data sent to the frontend:", chartData);
+
+  } catch (error) {
+    console.error("Error fetching data for chart:", error);
+    res.status(500).json({ error: "Failed to fetch data for chart" });
+  }

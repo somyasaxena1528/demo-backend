@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "somya",
+  "author": "priyanshu",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -13,6 +13,7 @@
     "bcrpyt": "^2.0.0",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-validator": "^7.2.1",
